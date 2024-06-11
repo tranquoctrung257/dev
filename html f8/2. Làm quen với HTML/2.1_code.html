@@ -1,0 +1,20 @@
+<!-- HTML -->
+Hôm nay <span class="example">là một này đẹp trời!</span>
+
+<!-- CSS -->
+<style >
+	.example{
+		color: red;
+		font-size: 32px;
+}
+</style>
+
+<!-- Javascript -->
+<script>
+	const example = document.querySelector('.example');
+		example.onclick = function(){
+			this.innerText = 'bạn đã click vào đây!'
+			this.style.color = "green"
+		}
+		
+</script>

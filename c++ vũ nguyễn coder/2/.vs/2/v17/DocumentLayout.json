@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7DE3DC4-9125-43EA-B165-50B365082005}|2.vcxproj|D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A7DE3DC4-9125-43EA-B165-50B365082005}|2.vcxproj|solutionrelative:2.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7DE3DC4-9125-43EA-B165-50B365082005}|2.vcxproj|D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A7DE3DC4-9125-43EA-B165-50B365082005}|2.vcxproj|solutionrelative:2.1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7DE3DC4-9125-43EA-B165-50B365082005}|2.vcxproj|D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.1.code.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A7DE3DC4-9125-43EA-B165-50B365082005}|2.vcxproj|solutionrelative:2.1.code.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "2.1.code.cpp",
+              "DocumentMoniker": "D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.1.code.cpp",
+              "RelativeDocumentMoniker": "2.1.code.cpp",
+              "ToolTip": "D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.1.code.cpp",
+              "RelativeToolTip": "2.1.code.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-09T07:41:08.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "2.2.cpp",
+              "DocumentMoniker": "D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.2.cpp",
+              "RelativeDocumentMoniker": "2.2.cpp",
+              "ToolTip": "D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.2.cpp",
+              "RelativeToolTip": "2.2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-09T07:26:12.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "2.1.cpp",
+              "DocumentMoniker": "D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.1.cpp",
+              "RelativeDocumentMoniker": "2.1.cpp",
+              "ToolTip": "D:\\dev\\c\u002B\u002B v\u0169 nguy\u1EC5n coder\\2\\2.1.cpp",
+              "RelativeToolTip": "2.1.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-09T04:41:00.102Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
