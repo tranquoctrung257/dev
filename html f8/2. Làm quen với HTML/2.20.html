@@ -1,0 +1,97 @@
+<!-- Tìm hiểu về các thẻ meta -->
+
+<!-- thẻ meta -->
+<!-- trong bài học này chúng ta sẽ tìm hiểu về các thẻ meta được đề cập trong ví dụ dưới đây (phần thẻ <head>) -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>tiêu đều của trang web</title>
+    </head>
+    <body>
+        nội dung của trang web
+    </body>
+</html>
+<!-- qua bài học trước, chúng ta đã được hoạc về thành phần thẻ <head> là nơi chứa các thẻ meta. thẻ mera được dùng để bổ sung thông tin cho trang web, các thông tin này thường được sử dụng bởi:trình duyêt,công cụ tìm kiếm như (google search) và các trình thu thập dữ liệu của mạng xã hội như facebook -->
+
+<!-- thẻ <meta> được sử dụng để cung cấp thêm thông tin và dữ liệu cho trang web  -->
+<!-- thẻ meta là một trong số thẻ tự đóng (tiếng anh:self-closing tag), cách viết của nó đơn giả như ví dụ sau: -->
+<meta/>
+
+<!-- khi sử dung thử <meta> chúng ta cần khai báo thêm thuộc tính để việc sử dụng thẻ này trở nên có ý nghĩa  -->
+<!-- một số trường hợp phổ biến: -->
+<!-- - chỉ định bảng mã kí tự cho trang web -->
+<!-- cung cấp mô tả trang web cho công cụ tìm kiếm -->
+<!-- chỉ định cách hiện thị trang web trên nhiều thiết bị (pc,mobile,tablet) -->
+
+<!-- thẻ meta charset -->
+<!-- đây là thẻ cần được khai báo tại vị trí đàu viên trong thẻ <head> -->
+<head>
+    <meta charset="UTF-8" />
+</head>
+
+<!-- thẻ meta với charset="UTF-8" có tác dụng hỗ trợ hiện thị các kí tự nàm ngoài khoảng A - Z ví dụ tiếng việt có dấu, tiếng trung, tiếng ả rập,.. -->
+<!-- nếu bạn không khai báo meta charset tại vị trí đầu tiên trong thẻ <head> thì trong một số trường hợp trang web chữ kí tự phức tạp, trình duyệt sẽ cố gắng đoán bằng bằng bảng mã ký tự và có thể gây ra lỗi hiện thị không mong muốn. -->
+<!-- điều kiện này khó xẩy ra. các trang web ngày nay hầu hết đều được triểu khai trê các máy chủ web có hỗ trợ UTF-8. Vì vậy, khai bào <meta charset="UTF-8" /> là không cần thiết trong trường hợp này -->
+<!-- tuy nhiên, không vì lí do trên mà chúng ta không sử dụng thẻ meta charset. Thực tế, vẫn có những máy chủ không mặc định hỗ trợ charset. để đảm bảo tính thống nhất về bảng mã kí tự trong trang web của bạn, mặc định chúng ta luôn sử dụng thẻ meta charset nhé. -->
+
+<!-- thẻ meta title -->
+<!-- tuy thẻ này không có từ meta nhưng vẫn nằm trong nhóm thẻ meta. đâu là thẻ chứa tiêu đề của trang web, tiêu đề này được sử dụng trong một số trường hợp -->
+<!-- - hiện thị tiêu đề trang web trên thanh tab của trình duyệt -->
+<!-- - hiên thị tiêu đề trong kết quả của công cụ tìm kiếm (ví dụ: google search ) -->
+<!-- <title>đây là tiêu đề được hiện thị ở thanh tab của trình duyệt</title> -->
+
+<!-- thẻ meta viewport -->
+<!-- để tối ưu hóa việc hiện thị giao diện web trên nhiều thiết bị có kích cỡ màn hình khác nhau như pc tablet bạn cần sử dụn thẻ meta viewport -->
+<!-- ví dụ sử dụng thử meta viewport: -->
+<!-- tóm lại là hỗ trợ tối ưu giao diện trên các thiết bị khác nhau và chủ yếu là các thiết bị màn hình nhỏ -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+<!-- nếu trang web của bạn không có thẻ meta viewport thì khi mwor tên thiết bị du động nội dung sẽ bị thu nhỏ, bạn cần phóng to để dễ dàng đọc được. Các trang web được xây dựng vào khoảng những năm 2010 thường gặp vấn đề này. -->
+<!-- sau đó trào lưu thiết kế web đáp ứng hay reponsive web design xuất hiện. Tới ngày nay, hầu hết mọi trang web đều được tối ưu hiện thị trên nhiều thiết bị bào gồm cả mobile đương nhiên, các trang web được tối ưu cho đa thiết bị đều sử dụng thẻ meta viewport  -->
+
+<!-- ví dụ  -->
+
+<!-- - bản thiết kế giao diện trang web  -->
+https://www.figma.com/design/n8EZ1ywmY8YJQnS2JjW3Bg/[Medium]----Findtrend-Webflow-(Free-Code)?node-id=2-1484&t=KBmzDN0gVJM0hfSh-0
+<!--trang web bị thiếu thẻ meta viewport:-->
+https://htmlcss-projects.fullstack.edu.vn/project-5/missing-meta-viewport.html
+<!-- - trang web có đủ thẻ meta viewport:  -->
+https://htmlcss-projects.fullstack.edu.vn/project-5
+
+<!-- trên thiết bị di động, trang web bị thiếu meta viewport chữ bị thu nhỏ, phải phóng to mới dễ đọc được: -->
+
+<!-- trong thẻ meta viewport giá trị width=device-width nhằm yêu cầu trình duyệt đặt chiều rộng của trang web bằng chiều rộng của pc,tablet,mobile. giá trị initial-scale=1.0 nhằm giữ đúng kích thước/ tỉ lệ mặc định của trang web -->
+
+<!-- thẻ meta open graph -->
+
+<!-- đây là thử meta được trình thu thập nội dung của facebook sử dụng. nhằm lất thông tin trang web phục vụ việc hiện thị được chia sẻ trên mạng xã hội này -->
+
+<meta
+    property="og:url"
+    content="https://fullstack.edu.vn/blogrtong-hop-cac-san-pham-cua-hoc-vien-tai-f8.html"
+/>
+<meta property="og:type" content="article" />
+<meta property="og:title" content="tổng hợp các sản phẩm của học viên tại F8"/>
+<meta
+    property="og:description"
+    content="bài viết này nhằm tổng hợp các dự án mà học viên F8 đã hoàn thành và chia se trên nhóm học lập trình Web F8. các dự án dưới..."
+/>
+<meta
+    property="og:image"
+    content="https://files.fullstack.edu.vn/f8-prod/blog_posts/65/6139fe28a9844.png"
+/>
+
+<!-- tất nhiên, đây mới là phần giới thiệu để các bạn nắm được ý nghĩa của các thẻ meta thường được sử dụng. để có thể triểu khai được một trang web lên mạng internet và có thể chia sẻ trang web đó lên facebook các bạn cần hoàn thành khóa học này -->
+
+<!-- tóm tắt -->
+<!-- 
+- thẻ meta được sử dụng để cung cấp thêm thông tin và dữ liệu cho trang web. cá thẻ meta thường được sử dụng bở trình duyệt. các công cụ tìm kiếm và trình thu thập dữ lệu của các mạng xã hội.
+- thẻ meta là một trong số thẻ tự đóng tiếng anh self-closing tag. không cần thêm thẻ đóng khi sử dụng thẻ meta 
+- thẻ meta charset nhằm chỉ định bảng mã kí tự cho trang web ví dụ <meta charset="UTF-8" /> . UTF-8 hỗ trợ hiện thị các kí tự ngoài khoảng A - Z. luôn nhớ đặt thẻ meta charset tại vị trí đầu tiên của thẻ <head>
+- thẻ meta<title> cung cấp tiêu đề trang web hiện thị trên tab trình duyệt, hiện thị trong kết quả tìm kiếm ví dụ google search
+- thẻ meta viewport để hỗ trợ trang web trên các thiết bị có kích thước màn hình khác nhau như pc tablet mobile nếu thẻ meta viewport, khi truy cập trên thiết bị di động có thể bị thu nhỏ cần phóng to để dễ dàng đọc được
+- thẻ meta open graph cung cấp thông tin cho trình thu thập dữ liệu của facebook, hỗ trợ hiện thị thông tin trang web trên mạng xã hội này
+ -->
