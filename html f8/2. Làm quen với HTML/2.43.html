@@ -1,0 +1,167 @@
+<!-- các mẹo để viết HTML tốt hơn -->
+
+<!-- viết phần thẻ mở và thẻ đóng trước  -->
+<!-- tuân thủ các viết này, bạn sẽ không bao giờ bị quyên thẻ đóng. -->
+<!-- hãy bắt đầu với thẻ mở và thẻ đóng  -->
+
+<h1></h1>
+
+<!-- sau đó mới thêm phần nội dung:  -->
+<h1>Hôm nay là ngày đẹp trời!</h1>
+
+<!-- đối với thẻ tự đóng tiếng anh(self-closing tag). hãy bắt đầu với: -->
+
+<meta />
+
+<!-- sau đó mới thêm thuộc tính -->
+
+<meta charset="UTF-8" />
+
+
+<!-- Trình bày code ngắn gọn -->
+<!-- Một bài văn tốt cần đúng chính tả. người viết văn là người hành văn, người viết code là người hành code. vậy viết HTML như thế nào cho đúng "chính tả"? -->
+<!-- thẻ con thụt lề 1 dấu tab so với thẻ cha 
+Để đảm bảo tính dễ đọc, tránh nhầm lẫn khi số lượng code HTML nhiều lên, các bạn luôn thụt lề cho thẻ con bằng 1 dấu Tab(4 dấu cách ) so cới thẻ cha nhé -->
+
+<!-- ví dụ: -->
+<body>
+    <h1>Hôm nay là một ngày đẹp trời!</h1>
+    <ul>
+        <li>Đầu mục 1</li>
+        <li>Đầu mục 2</li>
+        <li>Đầu mục 3</li>
+    </ul>
+</body>
+
+<!-- dưới đây là ví dụ cho việc trình bày không ngay hàng, thẳng lối  -->
+
+<body>
+<h1>Hôm nay là một ngày đẹp trời!</h1>
+<ul>
+<li>Đầu mục 1</li>
+<li>Đầu mục 2</li>
+<li>Đầu mục 3</li>
+</ul>
+</body>
+
+<!-- thực tế, việc không ngay hàng thẳng lỗi có rất nhiều hình thái khác nhau, tùy vào cách viết của mỗi người, nhưng đều gay ra vấn đề chung đó là rất khó đọc và xác đinh được các thẻ mở và thẻ đóng. có thể dẫn tói việc viết thừa/thiếu thẻ mở/ thẻ đóng, gây lõi giao diện trang web. -->
+
+<!-- không có để dư các khoảng trắng 
+trong HTML, việc viết dư thừa các khoảng trắng ahy các dấu ngắt dòng không gây ra lỗi giao diện. tuy nhiên, chúng ta không có lý do gò để viết dư các khoảng trắng. luôn đảm bảo viết code tối giarnm đơn giản, không dư thừa các khoảng trắng, đáu ngắt dòng không càn thiết  -->
+
+<!-- ví dụ khoảng trắc trong thẻ mở của thẻ <body> -->
+<body   >
+    Nội dung của trang web 
+</body>
+
+Dư một khoảng trắng trước/sau thuộc tính lang:
+<html   lang="vi">
+    ...
+</html>
+
+<!-- khoảng trắng gữa 2 thuộc tính  -->
+<a href="https://f8.edu.vn/"   title ="F8" >"Truy cap F8" </a>
+
+dư dấu ngắt dòng trước thẻ đóng của thẻ <h1>
+
+<body>
+    <h1>hôm nay là ngày đẹp trời!
+</h1>
+</body>
+
+<!-- ngắt dòng hợp lý 
+để đảm bảo tính dễ đọc cho code của các bạn khi viết HTML, các bạ cần tìm những điểm ngắt dòng hợp lý. -->
+
+<!-- ví dụ, sử dụng dấu ngắt dòng hợp lý: -->
+<ul>
+    <li>Đầu mục 1</li>
+    <li>Đầu mục 2</li>
+    <li>Đầu mục 3</li>
+</ul> 
+
+<!-- còn đây là trường lợp chưa hợp lý, làm code trở nên khó đọc hơn  -->
+
+<ul><li>Đầu mục 1</li><li>Đầu mục 2</li><li>Đầu mục 3</li></ul> 
+
+<!-- đặt các thẻ đúng vị trí
+có một số trường hợp các thể html được thiết kế để luôn nằm trong một thẻ cha khác.
+thẻ <head>,<body> luôn là thẻ con trực tiếp của thẻ <html> -->
+
+<html>
+    <head>
+        <!-- các thẻ meta  -->
+    </head>
+    <body>
+        <!-- nội dung trang web -->
+    </body>
+</html>
+
+<!-- tình huống sai: -->
+<html>
+    <head>
+        <!-- các thẻ meta  -->
+        <body>
+            <!-- nội dung trang web -->
+        </body>
+    </head>
+    <h1>hôm nay là một ngày đẹp trời!</h1>
+</html>
+<!-- có 2 điểm chưa đúng 
+1. thẻ <body> đang nằm trong thẻ <head>
+2. thẻ <h1> đang là thẻ con trực tiếp của thẻ <html>  -->
+
+thẻ <li> luôn là thử con trược tiếp của thẻ <ul>,<ol>:
+<!-- Unordered list -->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<!-- Ordered list -->
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<!-- tính huống chưa đúng -->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <p>Some paragraph</p>
+</ul>
+
+<!-- Điểu sai ở đây là thẻ <p> đang là thẻ con trực tiếp của thẻ <ul> -->
+
+
+<!-- một số sai lầm thường gặp khác 
+khi mới học, chúng ta thường gặp khó khăn trong việc học cú pháp. nhiều khi, chỉ một lỗi cú háp nhỏ có thể lấy đi thời gian cả ngày của bạn. -->
+<!-- 
+Quên http,https cho thuộc tính href 
+ví dụ, chuyển hướng tới trang web google.com.vn khi nhấn vào thẻ <a> bạn sẽ làm như nào?
+
+Như này là sai: -->
+<a href="google.com.vn">Tới Google</a>
+
+<!-- ví dụ URL cần bắt đầu với phần giao thức (http,https).trong trường hợn sử dụng đúng sẽ như sau: -->
+<a href="https://google.com.vn">Tới Google</a>
+
+<!-- Mở/dóng thẻ sai thứ tự -->
+<!-- ví dụ trong trường hợp sử dụng kết hợp nhiều thẻ một lúc 
+thay vì làm đúng như thế này  -->
+<p><b>Hôm nay</b> là một ngày đẹp trời</p>
+
+<!-- Bạn có thể nhầm như thế này: -->
+<p><b>Hôm nay</p>là một ngày đẹp trời!</b>
+
+<!-- đương nhiên, trong tính huống này kết quả sẽ không được như mong đợi. vậy nên, hãy luôn viết thẻ mở và thẻ đóng trước bạn nhé. -->
+<!-- 
+tóm tắt
+- luôn viết cú pháp mở và thẻ đóng trước, sau đó mới viết nội dung 
+- sử dụng thụt lề bằng 1 dấu tab cho các thẻ con 
+- không viết dư thừa các khoảng trắng và các dấu ngắt dòng.
+- sử dụng dấu ngắt dòng hợp lý, đảm bảo code dễ đọc.
+- đặt cá thẻ đúng vị trí. ví dụ:thẻ<li> luôn là con trực tiếp của thẻ <ul>,<ol>
+- luôn nhớ sử đụng https cho các URL trong thuộc tính href
+ -->

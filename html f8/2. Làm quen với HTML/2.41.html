@@ -1,0 +1,105 @@
+<!-- thuộc tính trong html  -->
+<!-- thuộc tính là gì? 
+thuộc tính(tiếng anh:attribute) được sử dụng để bổ sung thêm thông tin và dữ liệu cho thẻ HTML. các thuộc tính có dạng key="value" và luôn được viết trong thẻ mở của các thẻ html (không bao giờ được viết trong thẻ đóng)
+
+thực tế, các bạn đã được làm quen với một số thuộc tính của các thẻ HTML rồi đó.
+
+thuộc tính lang trong thẻ <html> -->
+
+<html lang="vi">
+    ...
+</html>
+<!-- 
+ví dụ trên có thuộc tính là lang="vi", nó gồm 2 phần 
+1.lang
+2.vi
+trong đó, lang được gọi là khóa của thuộc tính, vi đưcọ gọi là giá trị của thuộc tính.
+cùng quan sát một số ví dụ sử dụng thuộc tính thường gặp khác:  
+-->
+<!-- thuộc tính charset trong thẻ <meta>  -->
+<meta charset="UTF-8"/>
+
+<!-- thuộc tính href trong thẻ <a> -->
+<a href="https://fullstack.edu.vn"Tới trang web F8></a>
+
+<!-- thuộc tính src trong thẻ <img> -->
+<img src="http://i3.ytimg.com/vi/1EBe-11E3pM/maxresdefault.jpg" />
+
+<!-- nhiều thuộc tính 
+bạn có thể sử dụng đồng thời nhiều thuộc tính trong một thẻ html, mỗi thuộc tính(mỗi cặp key="value") được cách nhau bởi khoảng trắng.
+
+thuộc tính name và content trong thẻ <meta>viewport -->
+
+<meta name="viewport" content="width=device-width", initial-scale="1.0" />
+
+<!-- trong ví dụ trên có hai thuộc tính là:
+1.name = "viewport"
+2.content="width=device-width", initial-scale="1.0"
+
+trong thuộc tính thứ nhất có:
+1.key: name
+2.value:viewport
+
+trong thuộc tính thứ 2 có:
+1.key:content
+2.value: content="width=device-width", initial-scale="1.0" -->
+
+
+<!-- thuộc tính toàn cục  -->
+
+<!-- các thuộc tính được đề cập trong phần này có thể sử dụng cho toàn bộ cấc thẻ HTML. vì vậy, chúng được gọi là thuộc tính toàn cục(tiếng anh: global Attributes). -->
+
+<!-- thuộc tính lang  -->
+
+<!-- mặc định thuộc tính lang không được sử dụng cho trang web. khi sử sụng bạn sử dụng thuộc tính nà cho thẻ <html> thì mặc đinh các thẻ trong trang web sẽ kế lại thuộc tính lang này  -->
+
+<!-- ví dụ -->
+
+<html lang="vi">
+    ...
+    <body>
+        <!-- các thẻ p này cũng sẽ có lang="vi" -->
+        <p>hôm nay là một ngày đẹp trời</p>
+        <p>hôm qua cũng là một ngày đẹp trời</p>
+    </body>
+</html>
+
+<!-- chính vì điều này, nên nếu trang web của bạn có nội dung tiếng việt thì cần thêm <html lang="vi"> là đủ 
+
+tuy nhiên, có một số tình huống trang web của bạn vẫn đề cập tới một ngôn ngôn ngữ khác ngôn ngữ chính của trang web. trường hợp này, bạn có thể sử dung thêm thuộc tính lang cho thẻ chứa nội dung là ngôn ngữ khác  -->
+
+<!-- ví dụ: -->
+
+<html lang="vi">
+    ...
+    <body>
+        <!-- thẻ p này có lang="vi" -->
+        <p>hôm nay là một ngày đẹp trời</p>
+        <!-- thẻ p này có lang="en" -->
+        <p lang="en">Yesterday was also a beautiful day</p>
+    </body>
+</html>
+
+<!-- thuộc tính hidden sẽ được ẩn khỏi giao diện web(bao gồm cả các thẻ con và nội dung của nó.) -->
+<!-- ví dụ  -->
+<p>Hôm nay là ngày đẹp trời!</p>
+<p hidden>hôm qua cũng là một ngày đẹp trời</p>
+
+<!-- sau này bạn có thể dùng javascript để thêm/bớt thuộc tính hidden để làm cho một thẻ html được ẩn/hiện trên giao diện trang web  -->
+
+
+<!-- thuộc tính title  -->
+<!-- đây là thuộc tính bổ sung thông tin cho một thẻ html, nội dung của thuộc tính này sẽ hiện thị khi bạn đưa con trỏ chuột vào phàn nội dung của nó:  -->
+
+<!-- ví dụ  -->
+<h1 title="Hướng dẫn học HTML,CSS hiệu quả"> cách học HTML,CSS hiểu quả</h1>
+<a href="https://fullstack.edu.vn" title="Tới trang web của F8">fullstack.edu.vn</a>
+
+<!-- ngoài ra, còn một số thuộc tính toàn cục chưa được đề cập tới trong bài này. bạn có thể tham khảo thêm tại: https://www.w3schools.com/tags/ref_standardattributes.asp -->
+<!-- 
+tóm tắt 
+- thuộc tính(tiếng anh: attribute) được sử dụng để bổ sung thêm thông tin và dữ liệu cho các thẻ HTML.
+- các thuộc tính luôn luôn được thêm vào phần thẻ mở, không bao giờ được thêm vào phần thẻ đóng. 
+- có thể sử dụng nhiều thộng tính trong một thẻ HTML: ví dụ: <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+- các thuộc tính toàn cục có thể sử dụng cho mọi thẻ HTML. ví dụ: lang,hidden,title 
+ -->
