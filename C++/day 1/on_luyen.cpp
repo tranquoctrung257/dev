@@ -46,7 +46,9 @@ int main(){
 	// cout << int(c) << endl; // kiểm tra bảng mã vị trí của kí tự trong bảng mã ascii
 
 	// kiểm tra c là chữ hoa hay chữ thường	
-	char c;cin >> c;
+	
+	// char c;cin >> c;
+	
 	// if(c >= 65 && c <= 90){
 	// 	cout << "chữ hoa" << endl;
 	// }
@@ -117,14 +119,14 @@ int main(){
 	// 	cout << "a";
 	// }
 
-	int a,b,c; cin >> a >> b >> c;
-	if(a == b && a == c && b == c){
-		cout << "3";
-	}
-	else if((a == b) || b==c || a == c){
-		cout << "2";
-	}
-	else{
-		cout << "1";
-	}
+	// int a,b,c; cin >> a >> b >> c;
+	// if(a == b && a == c && b == c){
+	// 	cout << "3";
+	// }
+	// else if((a == b) || b==c || a == c){
+	// 	cout << "2";
+	// }
+	// else{
+	// 	cout << "1";
+	// }
 }
