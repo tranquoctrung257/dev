@@ -1,0 +1,49 @@
+// phần thêm các thư viện cần thiết
+#include <bits/stdc++.h>
+#include <iostream> # viết tắt của input output stream
+
+using namespace std;
+// nếu không có using namespace std;sẽ phải thêm std::cout mới chạy được 
+
+// mọi chương trình đều được chạy trong hàm main
+int main(){
+	
+	// code
+
+	return 0; // câu lệnh này cho vào cũng được mà không cho vào cũng được
+}
+
+// chú thích
+// hoặc chú thích trên nhiều dòng
+/*
+ghi chú nhiều dong
+*/
+
+int main(){
+	
+	cout << "xin_chao" << endl; // để in cái gì đó ra màn hình chúng ta dùng cout 
+
+	// endl kí tự xuống dòng
+	// hoặc dùng dấu \n
+	// ở trong c++ tất cả các câu lệnh đều được kết thúc bằng dấu chấm phẩy
+
+	<<: extraction operator
+}
+
+
+// kiểu dữ liệu
+- số nguyên: int,long long
+// int: 4byte = 32bit ==> -2^31 ->2^31 -1 [-2.10^9 ==> 2.10^9]
+// long long: 8byte = 64bit ==> -2^63 -> 2^63-1 [-9.10^18 =>9.10^18 ]
+
+- số thực: float,doube
+// float: 4byte = 32bit ==> lưu được 6 số phần thập phân
+// doube: 8byte = 64bit ==> lưu được 15 số phần thập phân
+- kí tự:char: character: 1byte 
+
+kí hiệu khoa học
+-10^9 ==> -1e9
+10^18 ==> 1e18
+10^16 ==> 1e16
+2.10^9 ==> 2e9
+1e2 + 7 ==> 100+7 = 107
