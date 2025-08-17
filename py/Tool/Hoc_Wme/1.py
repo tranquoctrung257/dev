@@ -56,12 +56,26 @@ def dat_cau_hinh_nick(token,id_ig):
 
 # print(dat_cau_hinh_nick(token=token_tds,id_ig="anhhiu7329"))
 
-def get_nv_ig(token,type):
-    url = f"https://traodoisub.com/api/?fields={type}&access_token={token}"
+def cau_hinh(token,idfb):
+    url = f"https://traodoisub.com/api/?fields=run&id={idfb}&access_token={token}"
     req = requests.get(url).json()
     return(req)
+id = "61553559230749" 
+# ds = cau_hinh(token_tds,id)
+def get_nv_fb(token,idfb,type):
+    url = f"https://traodoisub.com/api/?fields={idfb}&access_token={token}&type={type}"
+    return requests.get(url).text
+# print()
+# for i in range(len(ds['data'])):
+#     print(ds['data'][i]["id"],ds['data'][i]["link"])
+ds = get_nv_fb(token_tds,"facebook_follow","ALL")
+import re
+job = re.findall('"id": ".*?"',ds)
+for uid in job:
+    newid = str(uid).replace('"id": ','').replace('"',"")
+    print(newid)
 
-ds = get_nv_ig(token_tds,"instagram_like")
-print()
-for i in range(len(ds['data'])):
-    print(ds['data'][i]["id"],ds['data'][i]["link"])
+""" # hàm replace
+a = " xin chao"
+hi = a.replace("chao","")
+print(hi) """
