@@ -1,16 +1,14 @@
-# để nhập từ bàn phím thì dùng hàm input 
+# input() hàm có sẵn built-in function có tác dụng nhập từ bàn phím.
 
-firsname = input("nhập vào tên của bạn: ")
+CURRENT_YEAR = 2025
 
-print(firsname)
+firstName = input("your firstname: ")
+lastname = input("your last name: ")
+year_born = int(input("when you were born: "))
 
-# có thể nối 2 chuỗi lại với nhau
-print("tên của bạn là: " + firsname)
+# nếu không ép kiểu sẽ có lỗi này TypeError: unsupported operand type(s) for -: 'int' and 'str'
+# lỗi này có nghĩa là không hỗ trợ trừ cho kiểu int và kiểu str
+age = CURRENT_YEAR - year_born
 
-# ví dụ nhập tên của mình máy tính tính tuổi của mình 
-nam_hien_tai = 2025
-
-age = int(input("nhập năm sinh của bạn: "))
-print("tuổi của bạn là: ", nam_hien_tai - age)
-
-# TypeError: unsupported operand type(s) for -: 'int' and 'str' nếu không ép kiểu sẽ bị lỗ này không hỗ trợ trừ kiểu số nguyên và kiểu chuỗi.
+print("Your name is "+ firstName + " " + lastname)
+print("You are " + str(age) + " years old in" + str(CURRENT_YEAR))
