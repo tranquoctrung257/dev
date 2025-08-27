@@ -32,6 +32,7 @@ data_email = me(authorization)["data"]["email"]
 data_username = me(authorization)["data"]["username"]
 data_coin = me(authorization)["data"]["coin"]
 data_phone_number = me(authorization)["data"]["phone_number"]
+print(data_id)
 """ 
 print("ID nick: "data_id)
 print(data_name)
@@ -61,4 +62,3 @@ def report(auth):
     response = requests.get('https://gateway.golike.net/api/statistics/report', headers=headers,impersonate="safari260_ios")
     return response.json()
 
-print(report(auth=authorization))
