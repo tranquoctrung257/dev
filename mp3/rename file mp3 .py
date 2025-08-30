@@ -15,4 +15,4 @@ def main():
             safe_name = clean_filename(audio.get("title")[0]) + ".mp3"
             os.rename(mp3,safe_name)
 
-
+main()
