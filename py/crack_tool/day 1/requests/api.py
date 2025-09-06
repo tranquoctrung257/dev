@@ -45,7 +45,7 @@ def request(method, url, **kwargs):
     :rtype: requests.Response
 
     Usage::
-
+    
       >>> import requests
       >>> req = requests.request('GET', 'https://httpbin.org/get')
       >>> req
@@ -69,7 +69,7 @@ def get(url, params=None, **kwargs):
     :return: :class:`Response <Response>` object
     :rtype: requests.Response
     """
-
+    print(params)
     return request("get", url, params=params, **kwargs)
 
 

